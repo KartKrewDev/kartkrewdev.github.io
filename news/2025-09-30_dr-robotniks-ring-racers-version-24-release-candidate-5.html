@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<title>Dr. Robotnik's Ring Racers Version 2.4 Release Candidate 5 &ndash; Kart Krew Dev</title>
+
+<meta charset="utf-8" />
+<meta name="generator" content="Pelican" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="og:site_name" content="Kart Krew Dev">
+
+<meta name="og:title" content="Dr. Robotnik's Ring Racers Version 2.4 Release Candidate 5">
+<meta name="og:type" content="article">
+<meta name="article:published_time" content="2025-09-30 23:20:00+00:00">
+<meta name="article:modified_time" content="2025-09-30 23:20:00+00:00">
+<meta name="article:section" content="News">
+<meta name="description" content="Dr. Robotnik’s Ring Racers version 2.4 is just on the horizon! This is a Release Candidate version; the design and features are mostly final, but..." />
+<meta name="og:description" content="Dr. Robotnik’s Ring Racers version 2.4 is just on the horizon! This is a Release Candidate version; the design and features are mostly final, but..." />
+<meta name="og:image" content="https://www.kartkrew.org/theme/images/kkd_logo_V3.svg" />
+
+
+<style>
+/* archivo-black-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/archivo-black-v21-latin-regular.woff2') format('woff2');
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-regular.woff2') format('woff2');
+}
+
+/* lato-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-italic.woff2') format('woff2');
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-900.woff2') format('woff2');
+}
+
+/* lato-900italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-900italic.woff2') format('woff2');
+}
+
+
+</style>
+
+<link rel="icon" href="https://www.kartkrew.org/theme/images/kkd_logo_V3_white.svg" type="image/x-icon"/>
+<link rel="stylesheet" href="https://www.kartkrew.org/theme/css/reset.css">
+<link rel="stylesheet" href="https://www.kartkrew.org/theme/css/style.css">
+
+<link href="https://www.kartkrew.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Kart Krew Dev Full Atom Feed" />
+<link href="https://www.kartkrew.org/feeds/news.atom.xml" type="application/atom+xml" rel="alternate" title="Kart Krew Dev Categories Atom Feed" />
+</head>
+
+<body class="">
+<header class="nav-header">
+  <nav class="nav" aria-label="Main Menu">
+    <a href="/index.html" class="site-logo">
+      <img width="48" height="48" alt="Kart Krew" src="https://www.kartkrew.org/theme/images/kkd_logo_V3_white.svg">
+    </a>
+
+    <ul class="page-list">
+        <li><a  class="active" href="https://www.kartkrew.org/news.html">News</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+<article>
+<h1>Dr. Robotnik's Ring Racers Version 2.4 Release Candidate 5</h1>
+<p><i>Kart Krew Dev &mdash; Tue 30 September 2025</i></p>
+<p><em>Dr. Robotnik&rsquo;s Ring Racers</em> version 2.4 is just on the horizon!</p>
+<p>This is a <strong>Release Candidate</strong> version; the design and features are mostly final, but since there are a <em>lot</em> of changes in this release, we&rsquo;re making it available in a pending state to check for technical issues and critical bugs.</p>
+<p>If you&rsquo;d like to try out the newest features and fixes, and don&rsquo;t mind running into potential bugs, please give this version a try; let us know if you run into trouble via <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues">GitLab</a> or on <a href="https://kartkrew.org/discord">Discord</a>. </p>
+<h1>If you&rsquo;re just arriving, please read the previous release candidate notes first! This page won&rsquo;t list any changes made in prior RC versions.</h1>
+<ul>
+<li><a href="https://www.kartkrew.org/news/2025-09-11_dr-robotniks-ring-racers-version-24-release-candidate.html">RC1 patch notes</a></li>
+<li><a href="https://www.kartkrew.org/news/2025-09-17_dr-robotniks-ring-racers-version-24-release-candidate-2.html">RC2 patch notes</a></li>
+<li><a href="https://www.kartkrew.org/news/2025-09-18_dr-robotniks-ring-racers-version-24-release-candidate-3.html">RC3 patch notes</a></li>
+<li><a href="https://www.kartkrew.org/news/2025-09-19_dr-robotniks-ring-racers-version-24-release-candidate-4.html">RC4 patch notes</a></li>
+</ul>
+<h2>Download links</h2>
+<blockquote>
+<h2>WARNING!</h2>
+<p>This is a <strong>Release Candidate</strong> build. You may encounter bugs, lose progress, or otherwise have weird stuff happen to you.</p>
+<p>We recommend installing to a new location and backing up your save files (<code>ringdata.dat</code>, <code>ringprofiles.prf</code>, <code>ringconfig.cfg</code>). Installations upgraded to 2.4 cannot be reverted to 2.3; you MUST back up your data to do this.</p>
+<h2>BACK UP YOUR EXISTING INSTALLATION, OR YOU COULD IRREVERSIBLY LOSE <em>EVERYTHING!</em></h2>
+</blockquote>
+<ul>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/download/v2.4-rc5/Dr.Robotnik.s-Ring-Racers-v2.4-rc5-Installer.exe">Windows</a></li>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/download/v2.4-rc5/Dr.Robotnik.s-Ring-Racers-v2.4-rc5.dmg">macOS</a></li>
+<li>Flatpak <code>org.kartkrew.RingRacers</code> is available under the Flathub Beta channel only for non-stable releases.</li>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/tag/v2.4-rc5">GitHub Release Page</a></li>
+</ul>
+<blockquote>
+<p><strong>NOTE:</strong> There are still more fixes coming! However, we&rsquo;ve already made enough changes that we&rsquo;d like to battle-test the latest stuff while we work.</p>
+</blockquote>
+<h2>Core Gameplay</h2>
+<ul>
+<li>Fixed a bug preventing EXP from affecting the Item Roulette, and improved overall item odds (and several tuning factors) to compensate.<ul>
+<li><em>Yes, really. EXP correctly affected a lot of things, like Top/Shrink availability, Ring Box payouts, and CPU rubberbanding&hellip;but did NOT directly affect the contents of your Item Roulette, giving all players flat odds regardless of their race performance. Congratulations to the players who were able to stage consistent comebacks—it wasn&rsquo;t EXP, you&rsquo;re just good at playing from behind!</em> </li>
+</ul>
+</li>
+<li>Reduced the prevalence of strong speed items when near 1st and far away from pursuers.<ul>
+<li><em>Sneakers are strong! This should prevent anticlimactic endings where 2nd place speeds ahead with a Tripwire cut.</em></li>
+</ul>
+</li>
+<li>Dramatically improved the overall strength of Item Boxes when using Frantic Items (more comparable to 2.3).</li>
+<li>The final Checkpoint in a race now counts for significant extra EXP.<ul>
+<li><em>This rewards frontrunners who can hold their lead to the very end, or inventive racers who can find a last-minute comeback with poor odds. On the average 3-lap course, the finish line is worth about a bonus lap&rsquo;s worth of EXP.</em></li>
+</ul>
+</li>
+<li>Moderately reduced base &ldquo;stun&rdquo; time for lightweight characters.<ul>
+<li><em>This adjustment actually applies to all characters below maximum weight, but is most effective on lightweight classes. Stun is also already reduced if you&rsquo;re far from the leader or hit by a map hazard.</em></li>
+</ul>
+</li>
+<li>Ring Bail adjustments:<ul>
+<li>You can no longer Ring Bail while a Ring Bail is in progress.</li>
+<li>If you respawn for any reason at -20 Rings, you explode (exception: Ring Shooter).
+    - <em>This is actually a buff; previously, high-value Ring Bails would leave you stuck in the Bail state with no accumulated ringboost—a death sentence!</em></li>
+<li>Ring Bail now correctly removes Rocket Sneakers.</li>
+</ul>
+</li>
+<li>&ldquo;Stumble&rdquo; no longer removes ringboost.<ul>
+<li><em>This is a change mostly for Bail, since things like Ballhog overcharge could leave you stuck without speed at certain death, but should also make some setpieces less punishing when navigating them under Ring Box effect.</em></li>
+</ul>
+</li>
+<li>While impervious to damage, significantly reduced hitlag when making contact with hazards, and entirely removed hitlag versus damaging floors.<ul>
+<li>Player items inflict a longer, but standardized, amount of hitlag. <em>(This is one of the main counterplay strategies vs. Invincibility / Grow.)</em></li>
+</ul>
+</li>
+<li>Tripwire adjustments:<ul>
+<li>The terminology for both approaching &ldquo;TripwireOK&rdquo; and actually reaching it are now called &ldquo;Subsonic&rdquo; and &ldquo;Sonic Boom&rdquo; respectively.</li>
+<li>Base Sonic Boom threshold increased to 225%.<ul>
+<li><em>All of the following changes are meant to make getting a Sonic Boom more readable and accessible from generic speed states, including Ring Box; this unavoidably improves comeback chances, and this compensation nerf is just meant to make attacking the pack (or attacking the lead!) less automatic.</em> </li>
+</ul>
+</li>
+<li><em>Significantly</em> increased the leniency period when losing a Sonic Boom after already reaching it.</li>
+<li>In Race modes, 1st place has a fixed Sonic Boom threshold of 900% speed.<ul>
+<li><em>Seek employment.</em></li>
+</ul>
+</li>
+<li>Offroad no longer increases the Sonic Boom threshold.</li>
+<li>When very far from the leader, the Sonic Boom threshold moderately decreases (easier).</li>
+<li>Adjusted VFX and added SFX to provide clearer feedback when approaching and reaching the Sonic Boom threshold.</li>
+<li>The Subsonic visuals when approaching tripwire threshold now tint red if your Sonic Boom threshold is being raised (too close to leader).</li>
+</ul>
+</li>
+<li>Player afterimages no longer appear when under the effect of only a single boost type.<ul>
+<li><em>Players are under near-constant ringboost when playing well, so this was a permanent fixture above a certain skill level and could make it harder to read in crowded areas.</em></li>
+</ul>
+</li>
+<li>You can no longer suffer Ring Sting while you have Rings overhead from an active ringboost. (<em>Reminder: In 2.4, you&rsquo;re also protected from Sting if you&rsquo;re currently attracting rings that would place you above 0, or if you&rsquo;re charging a spindash.</em>)<ul>
+<li><em>This prevents frustrating edge-of-vulnerability Stings in the moments between boosting and collecting Rings from the track, or having potential boost wasted because of an unpredictable ricochet.</em></li>
+</ul>
+</li>
+</ul>
+<h2>Items</h2>
+<ul>
+<li>Stone Shoe slows the chained player down significantly more.<ul>
+<li><em>Hey, you&rsquo;re, uh. I think you&rsquo;re supposed to chain other people with it. Like it&rsquo;s not supposed to be an advantage to be—are you listening</em></li>
+<li><em>(This should make it easier to pass an aggressive chained player without getting wrecked.)</em></li>
+</ul>
+</li>
+<li>While charging, Lightning Shield is immune to most damage and map hazards.<ul>
+<li><em>This brings its functionality in line with the other shields, and restores its defensive power without giving 1st unlimited protection or unreactable attacks.</em></li>
+</ul>
+</li>
+</ul>
+<h2>Teamplay</h2>
+<ul>
+<li>In Battle mode, items from broken Item Monitors can now be immediately grabbed by anyone on the breaker&rsquo;s team.</li>
+<li>In Battle mode, eliminating all members of the enemy team during Overtime will now immediately end the round.</li>
+</ul>
+<h2>Online Play</h2>
+<ul>
+<li>Players now gain and lose Mobiums more gradually.</li>
+<li>Removed hidden Mobium adjustments for overall race placement.<ul>
+<li><em>The final Checkpoint now gives bonus EXP, so this is no longer necessary.</em></li>
+</ul>
+</li>
+<li>Fixed Mobiums updating strangely in Battle mode.</li>
+<li>Raised the bitrate of voice chat (again).</li>
+</ul>
+<h2>Challenges</h2>
+<ul>
+<li>Added a password to unlock all Tutorials.</li>
+</ul>
+<h2>Interface</h2>
+<ul>
+<li>Adjusted the display of signposts when players cross the finish line while about to die - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/merge_requests/28">!28</a></li>
+</ul>
+<h2>Accessibility</h2>
+<ul>
+<li>Reduce Effects now prevents the incoming-player &ldquo;CHECK&rdquo; warnings from flashing - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/merge_requests/43">!43</a></li>
+</ul>
+<h2>Misc Fixes</h2>
+<ul>
+<li>Fixed major performance issues caused by voice chat - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/">#234</a></li>
+<li>FIxed Eggmark not affecting players in precisely timed hitlag.</li>
+<li>Fixed non-damaging &ldquo;stumble&rdquo; removing Rings.</li>
+<li>Fixed damaging &ldquo;stumble&rdquo;, like from orbital or backthrown items, not awarding Amps.</li>
+<li>Fixed stumble sectors and terrain occasionally softlocking the player in hell.</li>
+<li>Fixed the Flame Shield boost bar being minimum length in Tutorials.</li>
+<li>Fixed Ring Box payouts sometimes forcing other Ring payouts to maximum speed.</li>
+<li>Fixed GP placement unlock conditions misfiring entirely - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/253">#253</a></li>
+<li>Viewing a non-teamplay replay with teamplay turned on no longer erroneously assigns team colors to players in the replay</li>
+<li>Fixed various crashes associated with using &ldquo;local only&rdquo; addons (like sound replacements) during netplay.</li>
+<li>Fixed Duels crashing at 99 laps instead of forcibly ending.</li>
+<li>Fixed the delay indicator not reflecting your Minimum Input Delay during netplay.</li>
+<li>Fixed various input irregularities with Acid Drop and Acid Cancel, especially when using Kickstart Accel.</li>
+<li>Fixed strange behavior when loading replays with Teamplay enabled in your settings.</li>
+<li>Fixed strange screen-fade behavior when playing back replays.</li>
+<li>Fixed the <code>debugitemodds</code> command displaying incorrect odds.</li>
+<li>Fixed players sometimes receiving an Item Roulette instead of a Casino Roulette when breaking a Ring Box at the same time.</li>
+<li>Fixed players under Overshield effect getting hit multiple times by Insta-Whip.</li>
+<li>Fixed an exploit regarding Time Attack challenges - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/merge_requests/41">!41</a></li>
+<li>Fixed an interaction between the POSITION! beam and the <code>freeze</code> debug command - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/merge_requests/37">!37</a></li>
+<li>Fixed Ring Bail playing follower horns even when disabled in Sound Options - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/merge_requests/45">!45</a></li>
+<li>Narrowed Special Thanks to people the devs actually know more personally.</li>
+</ul>
+<h2>Course Changes</h2>
+<ul>
+<li>Sunbeam Paradise, Rings - Adjusted dialogue to elaborate further on Ring usage mechanics and Sonic Boom (clearing Tripwire threshold).</li>
+<li>Sunbeam Paradise, Items - Adjusted dialogue to reflect updated terminology for Subsonic (approaching Tripwire threshold) and Sonic Boom (clearing Tripwire threshold).</li>
+<li>Panic City - Rasied the height of 1st tripwire cut - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2772743070">#144</a></li>
+<li>Emerald Coast - Added several blockplayers linedefs and respawn lines around the edges of the spiral and lighthouse sections to prevent major exploits. <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2770158007">#144</a></li>
+<li>Cadillac Cascade - Further adjusted final shortcut to reduce unintended entry - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Rumble Ridge - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Gigapolis <ul>
+<li>Adjusted out-of-bounds areas (to prevent exploits/trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Changed item boxes after the tumbling bridge to permanent ring boxes.</li>
+<li>Removed item boxes from the upper route after the tumbling bridge.</li>
+<li>Removed sneaker panel on the upper route after the tumbling bridge.</li>
+<li>Reduced dash panel strength at the exit of the upper route.</li>
+<li>The upper route after the tumbling bridge is no longer blocked by tripwire.</li>
+</ul>
+</li>
+<li>Bronze Lake - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Collision Chaos - Added Fault Point for Time Attack. Fixed an issue where low speed stats weren&rsquo;t able to take the wall transfer under certain conditions anymore at the start - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/133">#133</a></li>
+<li>Emerald Hill - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2770021886">#144</a>. Added an additional set of Dash rings to help redirect you on 1st shortcut.</li>
+<li>Silvercloud Island - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2770021886">#144</a>. Added an additional set of Dash rings to help redirect you on 1st shortcut.</li>
+<li>Desert Palace - Adjusted a shortcut and the surrounding area (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Press Garden - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>City Escape - Adjusted out-of-bounds areas (to prevent lost progress / trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Palmtree Panic - Adjusted the waypoints and removed the deathpit in the middle of the Spring to Dash Ring setpiece.</li>
+<li>Frozen Production - Nerfed the final shortcut to use two Sneaker Panels as opposed to a Charger Panel.</li>
+<li>Hydro City <ul>
+<li>Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Ending tripwire has been given a fence to prevent players from triangle-dashing  underneath it. - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2775911210">#144</a></li>
+</ul>
+</li>
+<li>Diamond Dust - Adjusted out-of-bounds areas (to prevent exploits). Replaced Garden Top and Invincible capsules - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Blue Mountain, Act 1<ul>
+<li>Changed the first set of item boxes to permanent ring boxes.</li>
+<li>Adjusted geometry at the first shortcut (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Adjusted Snowgang to balance offroad course turns</li>
+</ul>
+</li>
+<li>Blue Mountain, Act 2<ul>
+<li>Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Adjusted the second shortcut to prevent failure upon entry</li>
+<li>Adjusted the third shortcut to prevent failure upon entry</li>
+</ul>
+</li>
+<li>Speed Highway - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Virtual Highway - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Labyrinth - Made adjustments to allow low speed characters to progress in Gear 1 - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/207">#207</a></li>
+<li>Hot Shelter - Additional geometry added to prevent overpowering shortcuts without accessing tripwire - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Death Egg <ul>
+<li>Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Fixed an issue where part of the floor was damaging players - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/249">#249</a></li>
+</ul>
+</li>
+<li>Skyscraper Leaps - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Green Triangle - The Sneaker Capsule has been replaced.</li>
+<li>Zoned City - Adjusted out-of-bounds areas (to prevent lost progress / trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Vantablack Violet - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Dimension Disaster - Adjusted out-of-bound and boundary areas (to prevent exploits, lost progress / trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Aurora Atoll - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Fae Falls - Fixed an issue where a sector wasn&rsquo;t sloped correctly - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/254">#254</a></li>
+<li>Azure Axiom<ul>
+<li>All Trick Panel shortcuts are now gated by Tripwire, and have had their entry areas adjusted.</li>
+<li>The first usable itemset in Race has been moved to be just after the first checkpoint.</li>
+<li>The itemset exiting the shortcut with a Trick Panel has been changed to be a permanent Ringbox.</li>
+<li>The shortcut after the first checkpoint has been buffed to save additional time.</li>
+<li>Resolved a collision issue that let players step up a large height in a certain area - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/268">#268</a></li>
+</ul>
+</li>
+<li>Hanagumi Hall <ul>
+<li>Removed stray waypoint near the first tripwire area and repositioned the start of the shortcut waypoints to behind the tripwire to prevent proration inconsistency. - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/213">#213</a> </li>
+<li>Fixed players being able to phase through the starting gate. <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/60">#60</a> </li>
+<li>Player starts are no longer 1 fracunit above the ground. </li>
+<li>Fixed Finish line waypoint not being on the proper linedef. - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/60">#60</a></li>
+</ul>
+</li>
+<li>Technology Tundra - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2769189401">#144</a>. Extended the 1st shortcut to fix the placement calculation - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/213">#213</a></li>
+<li>Operator&rsquo;s Overspace - Both shield capsules have been replaced. The last shortcut now is fenced off, has tripwire and is blocked on the final lap.</li>
+<li>Mega Green Hill - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/231">#231</a></li>
+<li>Mega Scrap Brain - Altered Position starts and area.</li>
+<li>Nightfall Dimension<ul>
+<li>Added multiple Tripwires.</li>
+<li>Edited geometry to prevent unintended skips.</li>
+</ul>
+</li>
+<li>Voiddance Dimension<ul>
+<li>Added multiple Tripwires.</li>
+<li>Added block players walls to prevent unintended skips.</li>
+<li>Altered geometry to make the tracks routing more consistent.</li>
+<li>Item Box locations altered.</li>
+<li>Increased the size of the net texture on the floor.</li>
+</ul>
+</li>
+<li>Cloudtop Dimension - Adjusted shortcut areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Lake Margorite - Fixed oversight where you could skip tripwire - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2782454288">#144</a></li>
+<li>Endless Mine 2 - Fixed issue where respawn line wasn&rsquo;t extending through the entire area in a part of the course - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Aqua Tunnel - The final set of item boxes are now permanent ring boxes.</li>
+<li>Robotnik Winter - Adjusted out-of-bounds areas (to prevent lost progress / trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Blizzard Peaks - Reduced size of angled, green trees - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/187">#187</a></li>
+<li>Chemical Facility - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Monkey Mall - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Ramp Park <ul>
+<li>Removed yellow springs after the double large wall transfer.</li>
+<li>Adjusted the first shortcut&rsquo;s dash rings to prevent entry without accessing the tripwire</li>
+<li>Added a sneaker panel that extends to the edge of the final sloped U-turn before the finish to ensure players can take it more consistently.</li>
+</ul>
+</li>
+<li>Pestilence - Adjusted out-of-bounds areas (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Crimson Core - Adjusted out-of-bounds areas (to prevent exploits / lost progress) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2766835271">#144</a></li>
+<li>Las Vegas <ul>
+<li>Fixed issue with midtextures missing collision - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/224">#224</a></li>
+<li>Adjusted out-of-bounds areas (to prevent exploits) and waypoints to prevents difficult recoveries near the end of the race - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+</ul>
+</li>
+<li>Mega Collision Chaos - Adjusted out-of-bounds areas or waypoints (to prevent lost progress / trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/211">#211</a></li>
+<li>Mega Sandopolis - Adjusted out-of-bounds areas (to prevent unintended skips). - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Sky Babylon - Improved directioning on 1st spiral - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/188">#188</a></li>
+<li>Lavender Shrine<ul>
+<li>Added invisible wall sectors and blockplayers linedefs to just before the first wall transfer to prevent waypoint-related exploits. <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144">#144</a></li>
+<li>Added vertical tripwire directly after the wall transfer for the spraycan to prevent it from being taken without a boost item. (Purposefully does not extend to the ceiling as to help direct the player where to aim for them to obtain the spraycan.) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+</ul>
+</li>
+<li>Barren Badlands - Adjusted out-of-bounds areas (to prevent lost progress / trapped players) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Shuffle Square - Adjusted fencing in an area (to prevent unintended entry to a shortcut) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Angel Arrow Classic - Adjusted out-of-bounds areas (to prevent exploits).</li>
+<li>Launch Base Classic- Hidden Palace - Adjusted a shortcut and the surrounding area (to prevent exploits) - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/144#note_2758624639">#144</a></li>
+<li>Test Track - Fixed minimap having transparent pixels - <a href="https://gitlab.com/kart-krew-dev/ring-racers/-/issues/247">#247</a></li>
+</ul>
+<h2>Additional Contributors</h2>
+<p>These community contributors helped with this release. Thank you!</p>
+<ul>
+<li>Freaky Mutant Man</li>
+<li>JugadorXEI</li>
+<li>zander3312</li>
+</ul>
+</article>
+</main>
+
+<footer class="page-footer">
+  <div class="socials">
+    <a href="https://www.kartkrew.org/feeds/all.atom.xml">
+      <img width="32" height="32" alt="Feed" src="https://www.kartkrew.org/theme/images/iconmonstr-rss-feed-1.svg">
+    </a>
+    <a href="https://twitter.com/kartkrewdev">
+      <img width="32" height="32" alt="Twitter" src="https://www.kartkrew.org/theme/images/iconmonstr-twitter-1.svg">
+    </a>
+    <a href="https://www.youtube.com/@KartKrewDev">
+      <img width="32" height="32" alt="YouTube" src="https://www.kartkrew.org/theme/images/iconmonstr-youtube-6.svg">
+    </a>
+    <a href="https://kartkrew.org/discord">
+      <img width="32" height="32" alt="Discord" src="https://www.kartkrew.org/theme/images/iconmonstr-discord-1.svg">
+    </a>
+    <a href="https://gitlab.com/kart-krew-dev">
+      <img width="32" height="32" alt="Git" src="https://www.kartkrew.org/theme/images/iconmonstr-git-1.svg">
+    </a>
+  </div>
+  <p>&copy; Kart Krew Dev</p>
+  <p>
+    Kart Krew is not affiliated with SEGA. Dr. Robotnik&rsquo;s Ring Racers, SRB2Kart,
+    SRB2 Top-Down and all related software are works of fan art. Dr. Robotnik
+    and related characters are property of SEGA.
+  </p>
+  <p>Social icons used under license from <a href="https://iconmonstr.com">iconmonstr</a> &copy; Alexander Kahlkopf</p>
+</footer>
+
+<script defer type="text/javascript">
+let autoplayhook = (ev) => {
+  let autoplayVideos = document.querySelectorAll('video.intersect-autoplay');
+  let handler = async (entries) => {
+    for (let entry of entries) {
+      if (entry.isIntersecting === true) {
+        if (!entry.target.playing) {
+          await entry.target.play();
+        }
+      } else {
+        if (!entry.target.paused) {
+          await entry.target.pause();
+        }
+      }
+    }
+  };
+  let observer = new IntersectionObserver(handler);
+  for (let video of autoplayVideos) {
+    observer.observe(video);
+  }
+};
+document.addEventListener('DOMContentLoaded', autoplayhook);
+</script></body>
+</html>

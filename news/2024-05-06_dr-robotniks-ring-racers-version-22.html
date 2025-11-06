@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<title>Dr. Robotnik's Ring Racers Version 2.2 &ndash; Kart Krew Dev</title>
+
+<meta charset="utf-8" />
+<meta name="generator" content="Pelican" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="og:site_name" content="Kart Krew Dev">
+
+<meta name="og:title" content="Dr. Robotnik's Ring Racers Version 2.2">
+<meta name="og:type" content="article">
+<meta name="article:published_time" content="2024-05-06 01:30:00+00:00">
+<meta name="article:modified_time" content="2024-05-06 01:30:00+00:00">
+<meta name="article:section" content="News">
+<meta name="description" content="Auto Ring, balance adjustments, and more!" />
+<meta name="og:description" content="Auto Ring, balance adjustments, and more!" />
+<meta name="og:image" content="/theme/images/og-image/awryval-v2.2-promo.jpg" />
+
+
+<style>
+/* archivo-black-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/archivo-black-v21-latin-regular.woff2') format('woff2');
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-regular.woff2') format('woff2');
+}
+
+/* lato-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-italic.woff2') format('woff2');
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-900.woff2') format('woff2');
+}
+
+/* lato-900italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-900italic.woff2') format('woff2');
+}
+
+
+</style>
+
+<link rel="icon" href="https://www.kartkrew.org/theme/images/kkd_logo_V3_white.svg" type="image/x-icon"/>
+<link rel="stylesheet" href="https://www.kartkrew.org/theme/css/reset.css">
+<link rel="stylesheet" href="https://www.kartkrew.org/theme/css/style.css">
+
+<link href="https://www.kartkrew.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Kart Krew Dev Full Atom Feed" />
+<link href="https://www.kartkrew.org/feeds/news.atom.xml" type="application/atom+xml" rel="alternate" title="Kart Krew Dev Categories Atom Feed" />
+</head>
+
+<body class="">
+<header class="nav-header">
+  <nav class="nav" aria-label="Main Menu">
+    <a href="/index.html" class="site-logo">
+      <img width="48" height="48" alt="Kart Krew" src="https://www.kartkrew.org/theme/images/kkd_logo_V3_white.svg">
+    </a>
+
+    <ul class="page-list">
+        <li><a  class="active" href="https://www.kartkrew.org/news.html">News</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+<article>
+<h1>Dr. Robotnik's Ring Racers Version 2.2</h1>
+<p><i>Kart Krew Dev &mdash; Mon 06 May 2024</i></p>
+<p><img alt="" src="https://www.kartkrew.org/news/media/awryval-v2.2-promo-notext.jpg"></p>
+<p>Promo art courtesy of <a href="https://twitter.com/awryval">Awryval</a>&mdash;check them out on Twitter!</p>
+<p><em><strong>NOTE: This version is out-of-date! Please find the latest version on the News page.</strong></em></p>
+<h2>Download links</h2>
+<ul>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/download/v2.2/Dr.Robotnik.s-Ring-Racers-v2.2-Installer.exe">Windows</a></li>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/download/v2.2/Dr.Robotnik.s-Ring-Racers-v2.2.dmg">macOS</a></li>
+<li><a href="https://www.flathub.org/apps/org.kartkrew.RingRacers">Flatpak for Linux and Steam Deck</a></li>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/tag/v2.2">GitHub Release Page</a></li>
+</ul>
+<p>Since we released Ring Racers version 2.1, we&rsquo;ve been hard at work collecting and addressing feedback for this follow-up. This update includes a modest amount of new content, some new accessibility options, and a large swath of balance adjustments and bug fixes.</p>
+<p>Key to this update is the new Auto Ring accessibility feature: if you are struggling with managing Rings to keep your kart&rsquo;s momentum, you may find this feature helpful. However, like the distinction between Automatic and Manual Transmission in other racing games, you should learn to use Rings effectively to maximize your potential!</p>
+<h2>Auto Ring</h2>
+<p>
+<video alt="" class="intersect-autoplay" height="200" loop="true" muted="true" preload="none" width="320">Your browser does not support native videos.<source src="https://www.kartkrew.org/news/media/2.2-auto-ring.webm"></video>
+</p>
+<ul>
+<li>Added the &ldquo;Auto Ring&rdquo; accessibility toggle for profiles.<ul>
+<li>Your Follower will automatically use a couple rings for you, when you happen to be in ideal scenarios to use them.</li>
+<li><em>Just like &ldquo;Auto Roulette&rdquo;, this is not ideal for advanced play. However, we hope this option can help reduce mental load for newer players, and even be a teaching tool.</em></li>
+</ul>
+</li>
+</ul>
+<h2>General Gameplay</h2>
+<ul>
+<li>Fixed a regression from SRB2Kart that was preventing control when exiting a drift.<ul>
+<li><em>This could cause your steering to &ldquo;stick&rdquo; when releasing miniturbos, or produce some unusual &ldquo;strafe-like&rdquo; countersteering when exiting a partial drift. If you&rsquo;ve felt any handling downgrades when playing Ring Racers, please give this update a shot!</em></li>
+</ul>
+</li>
+<li>Improved general handling at high speeds, especially for heavyweights.<ul>
+<li><em>The core math behind handling has been largely unchanged since SRB2Kart—but you get pretty fast in Ring Racers, even on simple courses. The new values should help heavyweights take tight corners at speed, but otherwise won&rsquo;t affect much until you start combining boosts, helping you stay in control with power items.</em></li>
+</ul>
+</li>
+<li>Slightly reduced the power of upward slopes, making them easier to climb.<ul>
+<li><em>This is a small tweak, but allows you to retain more speed in sustained upward climbs.</em></li>
+</ul>
+</li>
+<li>Tricks are now input with direction + A, allowing you to slightly adjust your angle on the way up.<ul>
+<li><em>The pure directional input caused some input-overlap issues; players would sometimes prepare to countersteer, unaware they were about to hit a trick panel, then end up flying sideways as the input system suddenly changed. The new input method requires a distinct button press, which should almost completely eliminate accidental tricks—and allows you more room to adjust from bad entry angles. Fair warning, this might take a race or three to get used to.</em></li>
+</ul>
+</li>
+<li>Forward tricks allow you to steer slightly while in flight, like back and side tricks.</li>
+<li>Improved handling when releasing blue or rainbow miniturbos with Voltage (the &ldquo;charge&rdquo; you get from completing a trick).<ul>
+<li><em>This is mainly aimed at heavyweight players; with their quick MT charges and low handling, a sudden burst of linear speed could often be more frustrating than exciting. This state now grants you massive countersteering ability, letting you quickly adjust your angle to make use of the speed.</em></li>
+</ul>
+</li>
+<li>Fastfall bounces now nudge you towards where you&rsquo;re looking.<ul>
+<li><em>Fastfall bounce creates some interesting airtime tradeoffs and routing choices, but in the situations where you&rsquo;d use it on instinct—to correct for mistakes—the uncontrollable bounce often sent you to your death anyway. This makes it easier to manage your landing if you&rsquo;re at an unusual angle or speed, improving its utility as a recovery tool.</em></li>
+</ul>
+</li>
+<li>You no longer instantly fastfall if you slide off a ledge while brakedrifting.<ul>
+<li><em>This was already fixed for slide-off E-Brake, a similar situation, but brakedrifting slipped through. This should prevent unwanted fastfalls in tight cornering situations.</em></li>
+</ul>
+</li>
+<li>E-brake now brings you to a stop quicker.<ul>
+<li><em>A more responsive E-Brake means quicker Spindashes, quicker Ring Shooter, and better overall maneuverability in crazy terrain. This should improve recovery options when you&rsquo;re out of Rings or in a rough spot.</em></li>
+</ul>
+</li>
+<li>Spindashing while invincible will no longer reduce your rings below 0.<ul>
+<li><em>Spindash isn&rsquo;t meant to be a first-line recovery option, but if you&rsquo;re beat up enough to need it, there&rsquo;s no need to put you in a deeper grave.</em></li>
+</ul>
+</li>
+<li>Spindash speed increased by ~25% in Race only.<ul>
+<li><em>Spindash was always intended to be a little stronger, but shortly before release, we tweaked it so that overcharging would no longer grant extra power—making a &ldquo;perfect&rdquo; release much more lenient. However, this lost an entire &ldquo;stage&rdquo; of charge, making it slower overall. This buff brings it more in line with the original intent, and should make it easier to use in a variety of situations.</em></li>
+</ul>
+</li>
+<li>You now start races with 10 rings (was 5).<ul>
+<li><em>This change is almost entirely for POSITION and the first item set. For new players, this should reduce the likelihood you get Stung before you can get your bearings. For experts, while heavyweights still have the greatest incentive to cause problems on purpose—and have more chances to do it!—lightweights risk a lot less when trying to disrupt ambitious starts or sneak through the pack. Don&rsquo;t be afraid to get a little rowdy!</em></li>
+</ul>
+</li>
+</ul>
+<h2>Items</h2>
+<ul>
+<li>Ballhog now explodes on contact with walls, instead of bouncing.<ul>
+<li><em>Ballhog is pretty chaotic. New players are often afraid to use it, since the punishment for a bad ricochet can be pretty severe. On the other hand, random spam can make long curves a nightmare, and a well-placed shotgun can totally shut down a tight corner with little counterplay. We&rsquo;d like to do a lot more work with this item, but for the time being, this should reduce its lockdown potential while making it more usable for novices.</em></li>
+</ul>
+</li>
+<li>Invincibility&rsquo;s duration has been reduced to 7-17 seconds (was 10-20).</li>
+<li>Invincibility bonus activation duration scales slower: players need to be farther away to receive extra time.</li>
+<li>Invincibility hits inflict a lower tumble, with fewer bounces, and don&rsquo;t knock the victim&rsquo;s item away.<ul>
+<li><em>We&rsquo;d like strong items to each have their own niche, but Invincibility was doing double duty as a strong overtake item and a strong attack item. This made it pretty prevalent in mixed-skill lobbies, creating a sort of &ldquo;black hole&rdquo; effect at mid-pack—plus, CPU racers and their agile handling use it really, really well. You can still earn bonus duration by landing hits, so go crack some karts!</em></li>
+</ul>
+</li>
+<li>Shrink&rsquo;s &ldquo;grow lasers&rdquo; now grant less Grow time on players who are already powered up.<ul>
+<li><em>Shrink&rsquo;s effect can usually be dodged by adept players, so its direct benefit to the user is an important part of its balance. However, unscaled Grow duration made it super prone to variance: sometimes a track&rsquo;s layout and the pack&rsquo;s position dumps 20 lasers in the same location, and rolling through that spot gave you enough Grow time to steamroll the race. With this change, your Grow access should roughly scale to how many overtakes you need.</em></li>
+</ul>
+</li>
+<li>Fastfalling with Bubble Shield (&ldquo;bubblebounce&rdquo;) no longer extends Grow and Invincibility.</li>
+<li>During &ldquo;tripwire lockout&rdquo; (a brief period after being bounced off a tripwire), bubblebounce bounces lower.</li>
+<li>Bubblebounce now pops Bubble Shield in 1st place.<ul>
+<li><em>You knew it was coming. Bubblebounce is a rulebreaking movement option, allowing players to redirect their momentum and take all sorts of strange routes, but its incredible flexibility makes it course-dependent and challenging to tune. These changes are meant to bring Bubble Shield&rsquo;s movement capabilities in line with its offense and defense capabilities. It&rsquo;s still a compelling overtake tool, especially for players with good map knowledge and creativity, but doesn&rsquo;t allow you unlimited chances to hop over tripwire, and doesn&rsquo;t allow frontrunners to outpace their opposition. You get one bounce: make it count!</em></li>
+</ul>
+</li>
+<li>Flame Shield&rsquo;s final &ldquo;overheat&rdquo; boost travels faster, and briefly allows you to pass through tripwire.<ul>
+<li><em>Even though overheat wasn&rsquo;t intended to be very strong, spending the final boost sometimes felt more like a formality than an opportunity. Most people expect item-based boost mechanics to pass tripwire, too.</em></li>
+</ul>
+</li>
+<li>Reduced rebound velocity when running into Drop Targets at high speeds, or while under the effect of boosts.</li>
+<li>Drop Targets can now be Insta-Whipped to knock them away.<ul>
+<li><em>Frontrunners have every mechanic in the game working against them, so the 1st place item pool is meant to be strong—but they&rsquo;re meant to have tradeoffs, too. Drop Target trades direct damage for the ability to disrupt invincible opponents, making it a stellar trap at shortcut exits, but it was a little too good at impeding regular play.</em></li>
+</ul>
+</li>
+</ul>
+<h2>CPUs</h2>
+<ul>
+<li>CPU rubberbanding relaxes towards the end of the race.<ul>
+<li><em>CPU racers are tuned to fight hard and keep you on your toes—but losing a point of Lap Bonus and losing the entire race are very different things, especially if you&rsquo;re trying to bank some rings at the finish line.</em></li>
+</ul>
+</li>
+<li>CPU racers require more speed to cross Tripwire, and to hydroplane over water, when rubberbanding.<ul>
+<li><em>From player clips, instances of CPU racers being able to cross Tripwire were mostly due to combining mechanics that human players can also perform. But, we decided that it doesn&rsquo;t hurt to bias towards the player when their difficulty level is high enough to possibly be recieving help.</em></li>
+</ul>
+</li>
+<li>Fixed an oversight that caused CPU ringboost to last longer than intended on many maps.<ul>
+<li><em>CPU parameters sometimes change based on the course layout, to try and keep their overall challenge consistent. While this was working well for most things, it was busted for ringboost—situations that were meant to nerf CPUs were actually leaving their ringboost exactly the same. This affected Rivals more than usual, in part because they&rsquo;re so likely to snipe the Ring Boxes you leave behind.</em></li>
+</ul>
+</li>
+<li>Fixed an oversight that could significantly increase CPU ringboost speed.<ul>
+<li><em>This was a regression during the development of Ring Box, where ring mechanics changed considerably. This should reduce runaway Rivals and disruptive high-speed bumps—and, on some technical circuits, keep them on the track more consistently.</em></li>
+</ul>
+</li>
+<li>CPUs below Lv.8 no longer use Insta-Whip.<ul>
+<li><em>This should give players who are just starting out better opportunities to observe Ring Sting, and dampen some rough POSITION starts in early GP rounds.</em></li>
+</ul>
+</li>
+</ul>
+<h2>Grand Prix</h2>
+<ul>
+<li>On all difficulties but Master, CPU racer difficulty decreases by an additional level when using a continue.<ul>
+<li><em>There are instances where dynamic difficulty when using a continue was not impactful enough. Biasing slightly harder towards leveling down should help reduce crazy difficulty spikes.</em></li>
+</ul>
+</li>
+<li>After using a continue in a Sealed Star, part of the damage you&rsquo;ve dealt so far will be preserved. This effect can continue to stack with each attempt.<ul>
+<li><em>These extra challenges can put players under incredible pressure, and it&rsquo;s easy to get demoralized after a bad start—but with persistence, near misses and failed attempts can lead to victory. Hold out, UFO smasher!</em></li>
+</ul>
+</li>
+<li>Grand Prix difficulties have been renamed to better match their tuning—from lowest to highest intensity, Relaxed, Intense, Vicious, and Master.<ul>
+<li><em>Ring Racers is a crazy, technical game, and there are parts of it that ask the player for a lot. Rather than feeling like they&rsquo;ve fallen short of &ldquo;normal&rdquo;—or worse, pushing through a miserable experience to avoid &ldquo;easy&rdquo;—we want players to choose how hard they want to push, and how hard they want the game to push back.</em></li>
+</ul>
+</li>
+<li>New cups can now be unlocked by placing Bronze or higher on the previous cup, even on Relaxed (&ldquo;Easy&rdquo;).</li>
+<li>Getting A Rank no longer increases CPU racer difficulty on Relaxed (&ldquo;Easy&rdquo;).<ul>
+<li><em>Relaxed is intended to be&hellip;well, more relaxing, so there&rsquo;s a more aggressive limit on how quickly it tries to match your skill level.</em></li>
+</ul>
+</li>
+<li>Fixed a bug where CPUs that reached the difficulty cap could not get their level reduced from anything besides using a continue.</li>
+</ul>
+<h2>Maps</h2>
+<ul>
+<li>SPB Cup Race Maps have been increased in size by 20%. Staff Ghosts and medal times have changed.</li>
+<li>Fixed an issue in Balloon Park that caused players to rebound off the &ldquo;elephant wall&rdquo; at unusual angles.<ul>
+<li><em>Polyobject collision was in a pretty dire state, and basically guaranteed that you would get knocked <em>away</em> from the direction you were steering! This area should be much easier to navigate.</em></li>
+</ul>
+</li>
+<li>Villa and Church have swapped positions; Church is now encountered 2nd, while Villa is now encountered 4th.<ul>
+<li><em>While we still believe the layout is not very challenging, Villa is one of the first places a player can encounter Trick Panels in a level, and tends to catch players not ready for them off-guard since it has a lot of them. Now that it is in the 4th spot, you are guaranteed to have played a standard Race with this gimmick in it first.</em></li>
+</ul>
+</li>
+<li>Fixed an issue in Towers where the map was missing the correct number of player starts.</li>
+<li>Fixed Eggman getting stuck in a pillar in the Rings tutorial.</li>
+<li>&ldquo;Springs&rdquo; has received updated text to reflect the changes made to performing Tricks.<ul>
+<li><em>An additional piece of optional dialogue has been placed to inform players regarding the Voltage Drop technique.</em></li>
+</ul>
+</li>
+<li>Added additional geometry in the fastfall section in &ldquo;Springs&rdquo;.<ul>
+<li><em>This should help players identify where to fastfall a bit better than before.</em></li>
+</ul>
+</li>
+<li>Fixed an issue in Water Palace where players could skip significant parts of the course by getting launched high enough.</li>
+<li>Fixed an issue in Water Palace where an intended out of bounds section was missing a death pit.</li>
+<li>Fixed an issue in Water Palace where players could intentionally respawn to travel faster than intended.</li>
+<li>Adjusted part of Water Palace where players could get launched into an upper platform by making it traversable to the next section, instead of a wall.</li>
+<li>Added additional respawn lines in Thunder Piston to prevent players from skipping the final turn.</li>
+<li>Updated Thunder Piston&rsquo;s alternate music to have slightly better audio quality and a better loop point.</li>
+<li>Fixed an issue in Melty Manor where part of the level was missing a texture assignment.</li>
+<li>Fixed an issue in Azure City where bots would struggle to take the first shortcut.</li>
+<li>Fixed an issue in Angel Island where you could miss the 1st shortcut on Gear 1 as well as fixed transparency textures.</li>
+<li>Fixed an issue in Umbrella Rushwinds where transparency textures could be visible.</li>
+<li>Fixed an issue in Sky Babylon where an fof had the incorrect properties killing the player. This has now been changed to solid walls for players but not for objects.</li>
+<li>Added respawn lines in Darkvile Castle, Act 2 to prevent unintended shortcuts.</li>
+<li>Marked some waypoints in Aerial Highlands as no-respawn to prevent players from falling backwards into previous parts of the course.</li>
+<li>Fixed an issue in Regal Ruin where an intended out of bounds section was missing a death pit. </li>
+<li>Added the missing Rappy-specific dialogue to the easter egg in SRB2 Frozen Night.</li>
+<li>Adjusted the Mighty-specific dialogue in the easter egg in SRB2 Frozen Night.</li>
+<li>Adjusted the Ring capsules on the ice slalom cut of Blizzard Peaks as they were unreachable before.</li>
+<li>Removed most Sneaker Panels at the start of Blizzard Peaks to prevent running into the Position Beam accidentally.</li>
+<li>Added a respawn line at the end of Ice Paradise to prevent Bubble Shield cheese.</li>
+<li>Added Fast Fall Ark Arrows to Green Triangle&rsquo;s slope jump section.</li>
+<li>Fixed an issue in Green Triangle where an intended out of bounds section was missing a death pit.</li>
+<li>Fixed an issue in Green Triangle where there were two finish line waypoints.</li>
+<li>Removed unnecessary blockplayers linedefs in Las Vegas&rsquo;s first section.</li>
+<li>Fixed an issue in Wavecrash Dimension where a part of the level was missing copyslope, causing players to sometimes get stuck in a pit.</li>
+<li>Fixed an issue in Voiddance Dimension where part of the level was missing a death pit.</li>
+<li>Adjusted the Spraycan location of Diamond Dust Classic.</li>
+</ul>
+<h2>Challenges</h2>
+<ul>
+<li>You can now use Chao Keys to unlock Big Challenges that are next to other locked Big Challenges, as long as all other conditions are met.<ul>
+<li><em>Large tiles were always intended to require a disproportionate amount of work to skip, but requiring standard progression to break the stalemate is counter to the idea that you can do (almost) anything in this game just by playing it and earning Keys.</em></li>
+</ul>
+</li>
+<li>The prizes that drop from Prison Eggs will now show up after every 15 targets broken, not every 30.<ul>
+<li><em>This was definitely a little too rare for our liking. While it&rsquo;s intentional none will appear your very first run through Ring Cup, you should see one almost every attempt after that, helping you get started quickly on the Challenge Board. This also incentivises replaying more difficult Cups over simpler ones—you&rsquo;ll now be in with a chance of seeing two in those with particularly dense Bonus Rounds.</em></li>
+</ul>
+</li>
+<li>The number of Spray Cans you&rsquo;ve picked up, along with the total the game has to offer, are now both visible on the Statistics menu.<ul>
+<li><em>Fair play to those who got so addicted to the process of grabbing Spray Cans that they didn&rsquo;t realise their journey was over. This should help communicate that you&rsquo;re done with this process (at least for now.)</em></li>
+</ul>
+</li>
+<li>Honey, Ray, Espio, Silver, Blaze, and Bean have been given secondary unlock conditions.</li>
+<li>Chaos Zero&rsquo;s unlock condition is no longer tied to Grand Prix.</li>
+<li>The time requirement for Honey&rsquo;s primary unlock condition is now more lenient.</li>
+<li>The Grand Prix difficulty requirement for unlocking Mecha Sonic has been reduced from Master to Vicious (&ldquo;Hard&rdquo;).</li>
+<li>Reworded Bomb and Gutbuster&rsquo;s challenge descriptions to be a bit clearer.</li>
+<li>A few Follower challenges have been made slightly easier and/or given secondary unlock conditions.<ul>
+<li><em>In particular, some Follower unlock conditions from courses towards the end of a Cup are no longer tied to Grand Prix, which should make them a bit quicker to retry.</em></li>
+</ul>
+</li>
+<li>A new Follower has been added, along with its associated challenge.</li>
+<li>A password has been added solely to claim 25 Chao Keys.<ul>
+<li><em>This is intended for players who don&rsquo;t want to use a category-unlock code—whether you want to knock out a single frustrating challenge, reveal some extra unlockables, compensate for a glitch, or for any other reason.</em></li>
+</ul>
+</li>
+</ul>
+<h2>Modding</h2>
+<ul>
+<li><code>player_t</code> <code>tilt</code> is now visible and mutable in Lua - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/6">!6</a></li>
+<li>&ldquo;score&rdquo; added to disableable HUD elements - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/5">!5</a></li>
+</ul>
+<h2>Accessibility + Quality of Life</h2>
+<ul>
+<li>Reduce Visual Effects will now remove the ripple effect (but not textures) from the surfaces of liquids, and both the ripple and heatwave effects from the viewport.</li>
+<li>A &ldquo;streamer-safe&rdquo; mode has been added to the Sound Options to silence music we know can be flagged by Content ID. Several tracks are now marked internally as Content ID Unsafe. Modders can set the <code>MUSICDEF</code> property <code>ContentIDUnsafe</code> to <code>1</code> to apply this to their own music additions.<ul>
+<li><em>We will expand on this later, but for now this simply mutes music that is marked as unsafe.</em></li>
+</ul>
+</li>
+<li>Auto Roulette now displays a warning when toggled, to help players understand the impact of their choice. Old profiles will have Auto Roulette disabled when updating, but can freely switch it back on at their leisure.<ul>
+<li><em>This is kind of an unusual thing to do, but we saw a number of new players switch on Auto Roulette without properly understanding the weaknesses, only to be frustrated by it later. Auto Roulette is a good way to reduce mental overhead and input intensity, but sections of the game are designed around manual item selection, and Auto Roulette will make it harder to perform well. If it makes your experience better, please keep using it—that&rsquo;s what it&rsquo;s there for!—but we want to make sure everyone understands the choice they&rsquo;re making.</em></li>
+</ul>
+</li>
+<li>Players using Auto Roulette can no longer receive Garden Top from Item Boxes.<ul>
+<li><em>Garden Top is a powerful catchup tool, but it&rsquo;s tricky to use and has a pretty aggressive learning curve. Players using Auto Roulette can&rsquo;t choose to select something else, so we&rsquo;ve restricted Auto Roulette to friendlier and more general items.</em></li>
+</ul>
+</li>
+<li>The Free Play roulette, which is used when you&rsquo;re alone in a Match Race or Online setting, now contains every item in the game, instead of only Sneaker and Super Ring. This is affected by item toggles, allowing you to select specific items to use while alone.<ul>
+<li><em>This one&rsquo;s mainly for secret hunters and challenge seekers, but can also be a good way to practice navigating the course with catchup items.</em></li>
+</ul>
+</li>
+<li>When selecting your character and follower, you&rsquo;ll now hear your character&rsquo;s attack taunt and your follower&rsquo;s horn.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Fixed an issue that could cause Auto Roulette to take extremely long selecting an item.</li>
+<li>The author information for Robotnik Winter Zone Act 2 (Sonic Triple Trouble 16-bit) is correctly credited to Emnesium and Ex Prodigy. Sorry about that!</li>
+<li>Guarantee author information is shown for all shown song credits, not just shorter ones.<ul>
+<li><em>We put a limit on the amount of horizontal space a song credit could take up on-screen to prevent UI overlap, but it&rsquo;s more important for credit to be given than for aesthetic harmony to be achieved.</em></li>
+</ul>
+</li>
+<li>Fixed a common crash when joining multiplayer servers that serve addons from HTTP sources.</li>
+<li>Fixed an oversight that caused certain maps to have stronger upwards slopes than others.<ul>
+<li><em>This could make it harder for new players to get a feel for the physics. Technical: This was releated to a map&rsquo;s &ldquo;object scale&rdquo;.</em></li>
+</ul>
+</li>
+<li>Entering secret Rounds will no longer apply the Encore mode setting for Match Race if found during a Grand Prix.</li>
+<li>Dropping a Land Mine on your own head no longer counts towards Land Mine dunk Challenges.</li>
+<li>Recording and taking screenshots in the Software renderer at certain resolutions (such as 1366x768) now works correctly.<ul>
+<li><em>Technical: There was a bug with &ldquo;Pack Alignment&rdquo; handling when reading pixel data from the GPU with certain resolution widths.</em></li>
+</ul>
+</li>
+<li>A rare but catastrophic gamedata and profile corruption issue has been mitigated against.<ul>
+<li><em>We weren&rsquo;t able to reliably reproduce this problem, but our best hypothesis suggests this will be a good long-term solution.</em></li>
+</ul>
+</li>
+<li>Running the game multiple times in the same directory should no longer risk save and profile data corruption. You should still not run the game multiple times concurrently, though.</li>
+<li>The default audio mixing buffer size is doubled. This addresses audio crackling and other buffer underrun artifacts occuring on some devices.</li>
+<li>Fixed an issue in a map where debug logs were being displayed under certain circumstances.</li>
+<li>A new configuration option, &ldquo;Mixing Buffer Size&rdquo;, is available under Advanced Sound Options, to allow the user to configure the above buffer size. This is measured in samples per channel. To use the buffer size from 2.1, set it to 1024. This option&rsquo;s cvar is named <code>snd_mixingbuffersize</code>.</li>
+<li>Fixed a crash starting the game on devices without OpenGL 3.0 support.<ul>
+<li><em>The current intended minimum system requirement for Ring Racers is OpenGL 2.1 support, but an oversight in the new rendering abstraction layer caused it to require OpenGL 3.0.</em></li>
+</ul>
+</li>
+<li>Fixed several infrequent crashes playing back replays in the Credits and Attract modes.</li>
+<li>Emptying out a name for a replay will no longer try to save it.<ul>
+<li><em>The game would crash attempting to do so, and there was previously no way to decide a replay already marked as to-be-saved shouldn&rsquo;t be - so clearing the text box now serves this purpose.</em></li>
+</ul>
+</li>
+<li>Fixed a crash in Sealed Stars when breaking the UFO Catcher after previously viewing a post-Credits sequence.</li>
+<li>Fixed <code>debugitemamount</code> - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/4">!4</a></li>
+<li>Changed Minimum Input Delay to 15 tics maximum, and adjusted maximum tic prediction to 30 tics, to fix issues with lag compenstation for the item roulette - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/10">!10</a></li>
+<li>Restored the password for unlocking Online Play. Oops&hellip;</li>
+</ul>
+<h2>Technical</h2>
+<ul>
+<li>Fixed GCC build for non-x86 targets (only using <code>-mno-ms-bitfields</code> if detected available)</li>
+<li>discord-rpc is now built with rapidjson&rsquo;s deprecated <code>&lt;iterator&gt;</code> usage disabled. This fixes building with GCC 14.</li>
+<li>Various fixes for FreeBSD builds - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/2">!2</a></li>
+<li>Fixes for building with <code>muslc</code>, allowing for Alpine Linux builds - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/3">!3</a></li>
+<li>Added Gitlab CI for all 3 major platforms. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/8">!8</a>, <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/11">!11</a></li>
+<li>Fixed compilation errors with older SDL2 versions.</li>
+<li>Fixed some implicit expectations of <code>int</code> being 4 bytes wide, which may enable compilation for targets where that is not the case. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/7">!7</a></li>
+</ul>
+<h2>Contributors</h2>
+<p>These community contributors assisted with this release. Thank you!</p>
+<ul>
+<li>AAGaming</li>
+<li>Aurora Latius</li>
+<li>Alam Arias</li>
+<li>bitten2up</li>
+<li>Callmore</li>
+<li>Hanicef</li>
+<li>JugadorXEI</li>
+<li>Logan Arias</li>
+</ul>
+</article>
+</main>
+
+<footer class="page-footer">
+  <div class="socials">
+    <a href="https://www.kartkrew.org/feeds/all.atom.xml">
+      <img width="32" height="32" alt="Feed" src="https://www.kartkrew.org/theme/images/iconmonstr-rss-feed-1.svg">
+    </a>
+    <a href="https://twitter.com/kartkrewdev">
+      <img width="32" height="32" alt="Twitter" src="https://www.kartkrew.org/theme/images/iconmonstr-twitter-1.svg">
+    </a>
+    <a href="https://www.youtube.com/@KartKrewDev">
+      <img width="32" height="32" alt="YouTube" src="https://www.kartkrew.org/theme/images/iconmonstr-youtube-6.svg">
+    </a>
+    <a href="https://kartkrew.org/discord">
+      <img width="32" height="32" alt="Discord" src="https://www.kartkrew.org/theme/images/iconmonstr-discord-1.svg">
+    </a>
+    <a href="https://gitlab.com/kart-krew-dev">
+      <img width="32" height="32" alt="Git" src="https://www.kartkrew.org/theme/images/iconmonstr-git-1.svg">
+    </a>
+  </div>
+  <p>&copy; Kart Krew Dev</p>
+  <p>
+    Kart Krew is not affiliated with SEGA. Dr. Robotnik&rsquo;s Ring Racers, SRB2Kart,
+    SRB2 Top-Down and all related software are works of fan art. Dr. Robotnik
+    and related characters are property of SEGA.
+  </p>
+  <p>Social icons used under license from <a href="https://iconmonstr.com">iconmonstr</a> &copy; Alexander Kahlkopf</p>
+</footer>
+
+<script defer type="text/javascript">
+let autoplayhook = (ev) => {
+  let autoplayVideos = document.querySelectorAll('video.intersect-autoplay');
+  let handler = async (entries) => {
+    for (let entry of entries) {
+      if (entry.isIntersecting === true) {
+        if (!entry.target.playing) {
+          await entry.target.play();
+        }
+      } else {
+        if (!entry.target.paused) {
+          await entry.target.pause();
+        }
+      }
+    }
+  };
+  let observer = new IntersectionObserver(handler);
+  for (let video of autoplayVideos) {
+    observer.observe(video);
+  }
+};
+document.addEventListener('DOMContentLoaded', autoplayhook);
+</script></body>
+</html>
