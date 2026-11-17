@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<title>Dr. Robotnik's Ring Racers Version 2.3 &ndash; Kart Krew Dev</title>
+
+<meta charset="utf-8" />
+<meta name="generator" content="Pelican" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="og:site_name" content="Kart Krew Dev">
+
+<meta name="og:title" content="Dr. Robotnik's Ring Racers Version 2.3">
+<meta name="og:type" content="article">
+<meta name="article:published_time" content="2024-05-21 05:00:00+00:00">
+<meta name="article:modified_time" content="2024-05-21 05:00:00+00:00">
+<meta name="article:section" content="News">
+<meta name="description" content="Major control improvements and bug fixes galore" />
+<meta name="og:description" content="Major control improvements and bug fixes galore" />
+<meta name="og:image" content="https://www.kartkrew.org/theme/images/kkd_logo_V3.svg" />
+
+
+<style>
+/* archivo-black-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/archivo-black-v21-latin-regular.woff2') format('woff2');
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-regular.woff2') format('woff2');
+}
+
+/* lato-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-italic.woff2') format('woff2');
+}
+
+/* lato-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-900.woff2') format('woff2');
+}
+
+/* lato-900italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: url('https://www.kartkrew.org/theme/fonts/lato-v24-latin-900italic.woff2') format('woff2');
+}
+
+
+</style>
+
+<link rel="icon" href="https://www.kartkrew.org/theme/images/kkd_logo_V3_white.svg" type="image/x-icon"/>
+<link rel="stylesheet" href="https://www.kartkrew.org/theme/css/reset.css">
+<link rel="stylesheet" href="https://www.kartkrew.org/theme/css/style.css">
+
+<link href="https://www.kartkrew.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Kart Krew Dev Full Atom Feed" />
+<link href="https://www.kartkrew.org/feeds/news.atom.xml" type="application/atom+xml" rel="alternate" title="Kart Krew Dev Categories Atom Feed" />
+</head>
+
+<body class="">
+<header class="nav-header">
+  <nav class="nav" aria-label="Main Menu">
+    <a href="/index.html" class="site-logo">
+      <img width="48" height="48" alt="Kart Krew" src="https://www.kartkrew.org/theme/images/kkd_logo_V3_white.svg">
+    </a>
+
+    <ul class="page-list">
+        <li><a  class="active" href="https://www.kartkrew.org/news.html">News</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+<article>
+<h1>Dr. Robotnik's Ring Racers Version 2.3</h1>
+<p><i>Kart Krew Dev &mdash; Tue 21 May 2024</i></p>
+<p><em>Dr. Robotnik&rsquo;s Ring Racers</em> version 2.3 has been released! This is a targeted patch to some big technical issues and some small gameplay tweaks—including a <strong>huge</strong> improvement to control response!</p>
+<p><em>There are no map changes in this version, since we wanted to get some of these fixes out fast. Keep an eye out for future updates!</em></p>
+<h2>Download links</h2>
+<ul>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/download/v2.3/Dr.Robotnik.s-Ring-Racers-v2.3-Installer.exe">Windows</a></li>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/download/v2.3/Dr.Robotnik.s-Ring-Racers-v2.3.dmg">macOS</a></li>
+<li><a href="https://www.flathub.org/apps/org.kartkrew.RingRacers">Flatpak for Linux and Steam Deck</a></li>
+<li><a href="https://www.github.com/KartKrewDev/RingRacers/releases/tag/v2.3">GitHub Release Page</a></li>
+</ul>
+<h2>Manual</h2>
+<ul>
+<li>The Ring Racers Online Manual is now available! Check it out <a href="/rr-manual">here</a>, or find the &ldquo;Online Manual&rdquo; section under Extras. This exhaustive reference guide contains everything you could possibly want to know about how to get ahead.</li>
+</ul>
+<h2>Gameplay</h2>
+<ul>
+<li>Fixed the &ldquo;Minimum Input Delay&rdquo; option adding significant extra delay, even in situations where it should have been inactive. This improves input and handling responsiveness in all game modes.<ul>
+<li><em>The specifics are hard to explain, so here&rsquo;s the short version: unless you turned Minimum Input Delay down to 0 in your Profile Options, you&rsquo;ve been playing on up to </em><em>double</em><em> the intended delay. Yes, even online. Networking sucks! Thanks to Diggle and JugadorXEI for their help during initial investigation of these issues.</em></li>
+</ul>
+</li>
+<li>Fixed &ldquo;gentleman&rdquo; input delay (the delay applied to netgame hosts for fairness reasons) being unnecessarily strong.<ul>
+<li><em>Same root cause as the above. This effect was relatively small if anyone in your lobby had a good connection, but could sometimes be dramatic in small coast-to-coast games.</em></li>
+</ul>
+</li>
+<li>Braking while drifting no longer cancels Insta-Whip charge.</li>
+<li>When tricking, diagonal inputs are no longer ignored.<ul>
+<li><em>This was an input-safety feature from 2.0/2.1 that allowed players some time to correct sloppy inputs, but it causes more problems than it solves now that tricking requires a button press.</em></li>
+</ul>
+</li>
+<li>Slightly increased the analog stick distance required to input a trick.<ul>
+<li><em>This change is intended to be small, and will mostly affect controllers with strange behavior near their deadzone.</em></li>
+</ul>
+</li>
+<li>If you collide with players or walls over 30 times within a few seconds, you&rsquo;ll automatically respawn.<ul>
+<li><em>This should never trigger during standard play, but should &ldquo;un-stick&rdquo; you quicker if you&rsquo;re caught in a narrow spot or tight scenery and bouncing like crazy.</em></li>
+</ul>
+</li>
+<li>You can now press Spindash to execute a trick without fastfalling—press the button again to fastfall. This allows players to trick without releasing the accelerator, if they prefer. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/15">!15</a></li>
+</ul>
+<h2>Items</h2>
+<ul>
+<li>Shrink cooldown increased from 20 seconds to 60.</li>
+<li>Making contact with Shrink laser trails inflicts slightly less Shrink time.</li>
+<li>Increased Shrink laser &ldquo;near miss&rdquo; range, allowing you to graze further into the edge of a laser trail without punishment.<ul>
+<li><em>In rooms that couldn&rsquo;t stabilize long distance gaps, Shrink was affecting really large portions of the race—sometimes more than the racers!</em></li>
+</ul>
+</li>
+<li>Reduced the intensity of Shrink&rsquo;s darkness effect in dimly lit areas.<ul>
+<li><em>Shrink is meant to disrupt the leading racers, but not by blinding them. This effect was far too strong in certain portions of the game, like underwater sections.</em></li>
+</ul>
+</li>
+<li>Bubble Shield can no longer appear at the start of races.<ul>
+<li><em>When players were closely packed from POSITION, this could set several players far back on the first turn, before appropriate counterplay was available.</em></li>
+</ul>
+</li>
+<li>Flame Shield and Garden Top can no longer appear at the end of races.<ul>
+<li><em>Power items are meant to be attractive targets, but power items that allow an &ldquo;anytime&rdquo; Tripwire pass affected position play disproportionately, punishing mid-pack players towards the end of races.</em></li>
+</ul>
+</li>
+</ul>
+<h2>CPUs</h2>
+<ul>
+<li>Lower-level bots can now misjudge Lightning Shield / Bubble Shield distances, like players do (and like they already do with Insta-Whip).<ul>
+<li><em>Before, a CPU racer with a Bubble Shield would often hold it until able to score a guaranteed hit. They&rsquo;ll still do this at Lv.MAX, but they should typically be more &ldquo;human-like&rdquo; in Relaxed and Intense GP.</em></li>
+</ul>
+</li>
+</ul>
+<h2>Maps</h2>
+<ul>
+<li>Updated a texture in Melty Manor.</li>
+<li>Fixed an issue in Las Vegas where respawning players could get on a Rideroid, leaving them unable to interact with objects afterward.</li>
+</ul>
+<h2>Accessibility</h2>
+<ul>
+<li>&ldquo;Reduce Effects&rdquo; now prevents the Item Roulette and Casino Roulette from flashing when confirmed.</li>
+<li>&ldquo;Reduce Effects&rdquo; now stops item icons from flickering when deployed or dragged—instead, they&rsquo;ll be transparent.</li>
+<li>&ldquo;Reduce Effects&rdquo; now prevents the lamps in the POSITION! HUD from flickering.</li>
+<li>&ldquo;Reduce Effects&rdquo; now slows the color changing of the Position Number on the HUD.</li>
+<li>Pressing Spindash, Brake, or tricking with Accelerate will no longer disable Kickstart Accelerate. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/20">!20</a></li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>The author information for Dark Fortress (Sonic Megamix v5.0) is now correctly primarily credited to Leilani Wilson.<ul>
+<li><em>We&rsquo;ve made a few errors with by-hand crediting &mdash; if any more persist, please don&rsquo;t hesitate to drop us a line and we&rsquo;ll happily fix them too in future patches.</em></li>
+</ul>
+</li>
+<li>When the game saves, rather than writing to temp files and moving them to their destination, the game will move the old data to a backup file and write a new one. <ul>
+<li><em>This should hopefully mitigate against save corruption, and provide a backup if it does happen.</em></li>
+</ul>
+</li>
+<li>The game will no longer try to save gamedata and profiles in the event of a non-signal crash fatal errors.<ul>
+<li><em>It was never actually safe to do this, and we are reducing the risk of memory allocation failures causing file corruption as we try to track down the game data corruption problem.</em></li>
+</ul>
+</li>
+<li>Fixed an issue where the Free Play roulette would sometimes be used in Attack modes.<ul>
+<li><em>Rest in peace, Bubble Shield Angel Arrow.</em></li>
+</ul>
+</li>
+<li>Fixed an issue where staff ghosts would play back incorrectly when drifting.</li>
+<li>Fixed the &ldquo;gamestochat&rdquo; and &ldquo;allowguests&rdquo; cvars not being available for dedicated servers.<ul>
+<li><em>&ldquo;gamestochat&rdquo; can be very useful for unattended servers, since the game requirement makes kick/ban evasion time-consuming and annoying—but only if they&rsquo;re actually allowed to use it!</em></li>
+</ul>
+</li>
+<li>Fixed certain passwords having no effect when cheats were disabled.</li>
+<li>Fixed a technical issue where ACS wouldn&rsquo;t interact correctly with dynamic objects while playing online.</li>
+<li>Fixed an issue where a large total accumulated PWRLV can cause the calculation of average PWRLV to erroneously wrap around. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/19">!19</a></li>
+<li>ACS scripts which run too many instructions will terminate early instead of executing indefinitely. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/22">!22</a></li>
+<li>Corrected old text in the message displayed when loading a gameplay-altering mod. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/16">!16</a></li>
+<li>Fixed Instawhip charge VFX being positioned incorrectly in reverse gravity. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/14">!14</a></li>
+<li>Fixed a major performance issue with Instawhip charge VFX. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/14">!14</a></li>
+<li>Restored Orenzo</li>
+<li>Fixed palette indexing issues in RHI Software which led to incorrect display colors on drivers with less precise FPU operations. - Johnny on Flame, no MR</li>
+<li>Potentially fixed shader integer uniform implicit coercion causing issues on some Mesa GL versions on Linux. - Johnny on Flame, no MR</li>
+<li>The gravity cheat cvar no longer crashes the game when altered from the debug menu. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/21">!21</a></li>
+<li>Fixed held item amount underflow bug when using an item and being hit by the same kind of item at the same time. - <a href="https://git.do.srb2.org/KartKrew/RingRacers/-/merge_requests/23">!23</a></li>
+</ul>
+<h2>Contributors</h2>
+<p>These community contributors assisted with this release. Thank you!</p>
+<ul>
+<li>Alam Arias</li>
+<li>Callmore</li>
+<li>Lactozilla</li>
+<li>Logan Arias</li>
+<li>Johnny on Flame</li>
+<li>JugadorXEI</li>
+<li>katsy</li>
+</ul>
+</article>
+</main>
+
+<footer class="page-footer">
+  <div class="socials">
+    <a href="https://www.kartkrew.org/feeds/all.atom.xml">
+      <img width="32" height="32" alt="Feed" src="https://www.kartkrew.org/theme/images/iconmonstr-rss-feed-1.svg">
+    </a>
+    <a href="https://twitter.com/kartkrewdev">
+      <img width="32" height="32" alt="Twitter" src="https://www.kartkrew.org/theme/images/iconmonstr-twitter-1.svg">
+    </a>
+    <a href="https://www.youtube.com/@KartKrewDev">
+      <img width="32" height="32" alt="YouTube" src="https://www.kartkrew.org/theme/images/iconmonstr-youtube-6.svg">
+    </a>
+    <a href="https://kartkrew.org/discord">
+      <img width="32" height="32" alt="Discord" src="https://www.kartkrew.org/theme/images/iconmonstr-discord-1.svg">
+    </a>
+    <a href="https://gitlab.com/kart-krew-dev">
+      <img width="32" height="32" alt="Git" src="https://www.kartkrew.org/theme/images/iconmonstr-git-1.svg">
+    </a>
+  </div>
+  <p>&copy; Kart Krew Dev</p>
+  <p>
+    Kart Krew is not affiliated with SEGA. Dr. Robotnik&rsquo;s Ring Racers, SRB2Kart,
+    SRB2 Top-Down and all related software are works of fan art. Dr. Robotnik
+    and related characters are property of SEGA.
+  </p>
+  <p>Social icons used under license from <a href="https://iconmonstr.com">iconmonstr</a> &copy; Alexander Kahlkopf</p>
+</footer>
+
+<script defer type="text/javascript">
+let autoplayhook = (ev) => {
+  let autoplayVideos = document.querySelectorAll('video.intersect-autoplay');
+  let handler = async (entries) => {
+    for (let entry of entries) {
+      if (entry.isIntersecting === true) {
+        if (!entry.target.playing) {
+          await entry.target.play();
+        }
+      } else {
+        if (!entry.target.paused) {
+          await entry.target.pause();
+        }
+      }
+    }
+  };
+  let observer = new IntersectionObserver(handler);
+  for (let video of autoplayVideos) {
+    observer.observe(video);
+  }
+};
+document.addEventListener('DOMContentLoaded', autoplayhook);
+</script></body>
+</html>
